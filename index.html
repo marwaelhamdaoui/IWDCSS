@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="icon" href="res/images/Favicon.ico" /> 
+  <link rel="stylesheet" href="res/css/style.css" /> 
+  <title>My Dashboard</title> 
+</head> 
+<body> 
+
+  <header class="header"> 
+    <strong class="logo">Welcome to your dashboard!</strong> 
+    <nav class="nav"> 
+      <a href="https://www.inpt.ac.ma/" target="_blank">Moodle</a> 
+      <a href="https://m.inpt.ac.ma/" target="_blank">Courses</a> 
+    </nav> 
+  </header> 
+
+  <section> 
+    <div> 
+      <img src="res/images/me.png" width="128" height="128" alt="My picture" /> 
+    </div> 
+    <div> 
+      <ul> 
+        <li>Marwa Elhamdaoui</li> 
+        <li>06/05/2025</li> 
+        <li>Software Engineering</li> 
+      </ul> 
+    </div> 
+    <div> 
+      <strong class="grade">2.65</strong> 
+    </div> 
+  </section> 
+
+  <section> 
+    <h1>Courses</h1> 
+    <table> 
+      <thead> 
+        <tr> 
+          <th>#</th> 
+          <th>Course Title</th> 
+          <th>Semester</th> 
+          <th>Grade</th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr> 
+          <td>1</td> 
+          <td><a href="https://example.com/agile">Agile software development</a></td> 
+          <td>Fall</td> 
+          <td>82</td> 
+        </tr> 
+        <tr> 
+          <td>2</td> 
+          <td><a href="https://example.com/modeling">Systems modelling</a></td> 
+          <td>Fall</td> 
+          <td>85</td> 
+        </tr> 
+        <tr> 
+          <td>3</td> 
+          <td><a href="https://example.com/requirements">Requirements Engineering</a></td> 
+          <td>Fall</td> 
+          <td>99</td> 
+        </tr> 
+        <tr> 
+          <td>4</td> 
+          <td><a href="https://example.com/hci">Human Computer Interaction</a></td> 
+          <td>Fall</td> 
+          <td>65</td> 
+        </tr> 
+      </tbody> 
+      <tfoot> 
+        <tr> 
+          <td colspan="4">End of Course List</td> 
+        </tr> 
+      </tfoot> 
+    </table> 
+  </section> 
+
+  <section> 
+    <h2>Add a New Course</h2> 
+    <form> 
+      <label for="courseTitle">Course Title:</label> 
+      <input type="text" id="courseTitle" name="courseTitle" required /> 
+
+      <label for="semester">Semester:</label> 
+      <select id="semester" name="semester" required> 
+        <option value="fall">Fall</option> 
+        <option value="spring">Spring</option> 
+      </select> 
+
+      <label for="grade">Grade:</label> 
+      <input type="number" id="grade" name="grade" min="0" max="100" required /> 
+
+      <button type="submit">Add Course</button> 
+    </form> 
+  </section> 
+
+  <footer> 
+    <ul> 
+      <li><a href="https://www.inpt.ac.ma/" target="_blank">Moodle</a></li> 
+      <li><a href="https://m.inpt.ac.ma/" target="_blank">Courses</a></li> 
+    </ul> 
+  </footer> 
+
+</body> 
+</html>
